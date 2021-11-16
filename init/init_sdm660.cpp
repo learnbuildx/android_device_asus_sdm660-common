@@ -122,4 +122,11 @@ void vendor_load_properties()
     property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
+
+    // Safetynet Workaround
+    property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.build.description", "redfin-user 11 RQ3A.21101.001.A1 7641976 release-keys");
+    property_override("ro.build.fingerprint", "google/redfin/redfin:11/RQ3A.21101.001.A1/7641976:user/release-keys");
+    property_override("ro.system.build.fingerprint", "google/redfin/redfin:11/RQ3A.21101.001.A1/7641976:user/release-keys");
+
 }
